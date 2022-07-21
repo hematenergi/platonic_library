@@ -1,9 +1,7 @@
-const express = require("express")
-
-const app = express()
+const app = require("./app")
 
 app.get("route", (req, res) => {})
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 8888
 
-app.listen(PORT, () => console.log(`Server Running On Port PORT`))
+app.listen(PORT, () => console.log(`Server Running On Port PORT ${PORT}`))
